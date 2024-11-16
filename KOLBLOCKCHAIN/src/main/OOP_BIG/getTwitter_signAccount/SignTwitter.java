@@ -32,7 +32,7 @@ public class SignTwitter {
 
     public void signAccountTwitter() {
         this.driver.get("https://x.com/i/flow/login");
-        WebDriverWait wait = new WebDriverWait(driver, 15);
+        WebDriverWait wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(15));
         WebElement usernameField = wait
                 .until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@name='text']")));
         usernameField.sendKeys(getElements("text") + Keys.ENTER);
