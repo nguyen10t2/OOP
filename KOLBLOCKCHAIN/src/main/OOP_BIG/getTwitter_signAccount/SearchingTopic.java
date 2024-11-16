@@ -40,7 +40,7 @@ public class SearchingTopic {
     }
 
     public void searchTopic() {
-        WebDriverWait wait = new WebDriverWait(driver, 15);
+        WebDriverWait wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(15));
         WebElement searchField = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='Search']")));
         searchField.sendKeys(getTopic() + Keys.ENTER);
         WebElement peopleTab = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='People']")));
