@@ -1,0 +1,23 @@
+package Buoi4;
+
+public class quadrilateral {
+	private Point d1, d2, d3, d4; 
+	
+	public quadrilateral(Point ...d) {
+		d1 = d[0];
+		d2 = d[1];
+		d3 = d[2];
+		d4 = d[3];
+	}
+	
+	public void printQuadrilateral() {
+		d1.printPoint();
+		d2.printPoint();
+		d3.printPoint();
+		d4.printPoint();
+	}
+	public static void main(String[] args) {
+		quadrilateral q = new quadrilateral(new Point(1, 2));
+		q.printQuadrilateral();
+	}
+}

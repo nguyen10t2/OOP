@@ -1,0 +1,11 @@
+package Buoi3;
+
+public class Main {
+	public static void increase(BankAccount clone) {
+		
+	}
+	public static void main(String[] args) {
+		BankAccount s1 = new BankAccount(1000, "Hoang");
+		
+	}
+}
